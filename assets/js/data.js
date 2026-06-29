@@ -250,15 +250,6 @@ bayar:0,
 metode:"-",
 keterangan:""
 },
-
-{
-nama:"Samadi",
-jumlah:1,
-tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
-},
     
 {
 nama:"Suryanto",
