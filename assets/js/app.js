@@ -318,19 +318,27 @@ function renderLogMasuk() {
         tbody.innerHTML += `
         <tr class="border-b hover:bg-slate-50 transition">
 
-            <td class="p-3 whitespace-nowrap">${item.tanggal}</td>
+    <td class="px-4 py-3 text-center whitespace-nowrap">
+        ${item.tanggal}
+    </td>
 
-            <td class="font-medium">${item.nama}</td>
+    <td class="px-4 py-3 text-center font-medium">
+        ${item.nama}
+    </td>
 
-            <td class="text-green-600 font-bold">
-                ${rupiah(item.jumlah)}
-            </td>
+    <td class="px-4 py-3 text-center text-green-600 font-bold">
+        ${rupiah(item.jumlah)}
+    </td>
 
-            <td>${badge}</td>
+    <td class="px-4 py-3 text-center">
+        ${badge}
+    </td>
 
-            <td>${item.keterangan}</td>
+    <td class="px-4 py-3 text-center">
+        ${item.keterangan}
+    </td>
 
-        </tr>
+</tr>
         `;
 
     });
@@ -351,15 +359,19 @@ function renderLogKeluar() {
         tbody.innerHTML += `
         <tr class="border-b hover:bg-slate-50 transition">
 
-            <td class="p-3 whitespace-nowrap">${item.tanggal}</td>
+    <td class="px-4 py-3 text-center">
+        ${item.tanggal}
+    </td>
 
-            <td class="text-red-600 font-bold">
-                ${rupiah(item.jumlah)}
-            </td>
+    <td class="px-4 py-3 text-center text-red-600 font-bold">
+        ${rupiah(item.jumlah)}
+    </td>
 
-            <td>${item.keperluan}</td>
+    <td class="px-4 py-3 text-center">
+        ${item.keperluan}
+    </td>
 
-        </tr>
+</tr>
         `;
 
     });
