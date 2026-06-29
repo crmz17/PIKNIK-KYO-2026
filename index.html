@@ -217,27 +217,82 @@ class="hidden fixed inset-0 bg-black/50 flex items-center justify-center p-4">
     </div>
 
 </div>
-        <section id="chart" class="grid lg:grid-cols-2 gap-6 mb-6">
+    <!-- LOG TRANSAKSI -->
+<section class="grid lg:grid-cols-2 gap-6 mt-6">
 
-            <div class="bg-white rounded-2xl shadow p-6">
+    <!-- LOG MASUK -->
+    <div class="bg-white rounded-2xl shadow">
 
-                <canvas id="pieChart"></canvas>
+        <div class="px-6 py-4 border-b">
+            <h2 class="font-bold text-lg">
+                💰 Log Uang Masuk
+            </h2>
+        </div>
 
-            </div>
+        <div class="overflow-x-auto">
 
-            <div class="bg-white rounded-2xl shadow p-6">
+            <table class="w-full text-sm">
 
-                <canvas id="barChart"></canvas>
+                <thead class="bg-blue-600 text-white">
 
-            </div>
+                    <tr>
+                        <th class="p-3">Tanggal</th>
+                        <th>Nama</th>
+                        <th>Nominal</th>
+                        <th>Metode</th>
+                        <th>Keterangan</th>
+                    </tr>
 
-        </section>
+                </thead>
+
+                <tbody id="logMasukTable"></tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- LOG KELUAR -->
+    <div class="bg-white rounded-2xl shadow">
+
+        <div class="px-6 py-4 border-b">
+
+            <h2 class="font-bold text-lg">
+                💸 Log Uang Keluar
+            </h2>
+
+        </div>
+
+        <div class="overflow-x-auto">
+
+            <table class="w-full text-sm">
+
+                <thead class="bg-red-500 text-white">
+
+                    <tr>
+                        <th class="p-3">Tanggal</th>
+                        <th>Nominal</th>
+                        <th>Keperluan</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="logKeluarTable"></tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
 
     </div>
 <footer class="mt-12 text-center text-slate-500 text-sm py-8">
 
     <p>
-        © 2026 PIKNIK KYO
+        © 2026 KYO
     </p>
 
     <p class="mt-2">
