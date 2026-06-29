@@ -358,6 +358,63 @@ function renderLogKeluar() {
 
 }
 
-renderLogMasuk();
+function renderLogMasuk() {
 
-renderLogKeluar();
+    const tbody = document.getElementById("logMasukTable");
+
+    tbody.innerHTML = "";
+
+    [...logMasuk].reverse().forEach(item => {
+
+        const badge =
+            item.metode === "Transfer"
+            ? `<span class="px-2 py-1 text-xs rounded-full bg-blue-100 text-blue-700 font-semibold">Transfer</span>`
+            : `<span class="px-2 py-1 text-xs rounded-full bg-green-100 text-green-700 font-semibold">Cash</span>`;
+
+        tbody.innerHTML += `
+        <tr class="border-b hover:bg-slate-50 transition">
+
+            <td class="p-3 whitespace-nowrap">${item.tanggal}</td>
+
+            <td class="font-medium">${item.nama}</td>
+
+            <td class="text-green-600 font-bold">
+                ${rupiah(item.jumlah)}
+            </td>
+
+            <td>${badge}</td>
+
+            <td>${item.keterangan}</td>
+
+        </tr>
+        `;
+
+    });
+
+}
+
+function renderLogKeluar() {
+
+    const tbody = document.getElementById("logKeluarTable");
+
+    tbody.innerHTML = "";
+
+    [...logKeluar].reverse().forEach(item => {
+
+        tbody.innerHTML += `
+        <tr class="border-b hover:bg-slate-50 transition">
+
+            <td class="p-3 whitespace-nowrap">${item.tanggal}</td>
+
+            <td class="text-red-600 font-bold">
+                ${rupiah(item.jumlah)}
+            </td>
+
+            <td>${item.keperluan}</td>
+
+        </tr>
+        `;
+
+    });
+
+}
