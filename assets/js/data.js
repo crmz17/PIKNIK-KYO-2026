@@ -94,7 +94,7 @@ keterangan:""
 nama:"Fachry",
 jumlah:1,
 tagihan:150000,
-bayar:0,
+bayar:75000,
 metode:"-",
 keterangan:""
 },
@@ -336,39 +336,102 @@ keterangan:""
 
 const logMasuk = [
     {
-        tanggal: "2026-06-05",
+        tanggal: "2026-06-27",
         nama: "Agung",
         jumlah: 150000,
         metode: "Transfer",
         keterangan: "Lunas"
     },
     {
-        tanggal: "2026-06-06",
+        tanggal: "2026-06-27",
         nama: "Angga",
         jumlah: 50000,
         metode: "Cash",
         keterangan: "DP"
     },
     {
-        tanggal: "2026-06-06",
+        tanggal: "2026-06-27",
         nama: "Arif",
         jumlah: 50000,
         metode: "Cash",
         keterangan: "DP"
     },
     {
-        tanggal: "2026-06-06",
+        tanggal: "2026-06-27",
         nama: "Bowo",
         jumlah: 230000,
         metode: "Cash",
         keterangan: "Cash + Tabungan"
     },
     {
-        tanggal: "2026-06-07",
+        tanggal: "2026-06-27",
+        nama: "Cahyo",
+        jumlah: 50000,
+        metode: "Cash",
+        keterangan: "DP"
+    },
+    {
+        tanggal: "2026-06-27",
+        nama: "Devan",
+        jumlah: 50000,
+        metode: "Cash",
+        keterangan: "DP"
+    },
+    {
+        tanggal: "2026-06-27",
+        nama: "Feli",
+        jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-06-27",
+        nama: "Herwan",
+        jumlah: 100000,
+        metode: "Cash",
+        keterangan: "DP"
+    },
+    {
+        tanggal: "2026-06-27",
+        nama: "Okta",
+        jumlah: 450000,
+        metode: "Cash",
+        keterangan: "DP"
+    },
+    {
+        tanggal: "2026-06-27",
+        nama: "Suryanto",
+        jumlah: 100000,
+        metode: "Cash",
+        keterangan: "DP"
+    },
+    {
+        tanggal: "2026-06-27",
+        nama: "Tesa",
+        jumlah: 300000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-06-27",
+        nama: "Yudi",
+        jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-06-28",
         nama: "Malik",
         jumlah: 450000,
         metode: "Transfer",
         keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-06-28",
+        nama: "Fachry",
+        jumlah: 75.000,
+        metode: "Transfer",
+        keterangan: "DP"
     }
 ];
 const logKeluar = [
