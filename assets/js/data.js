@@ -429,7 +429,7 @@ const logMasuk = [
     {
         tanggal: "2026-06-28",
         nama: "Fachry",
-        jumlah: 75.000,
+        jumlah: 75000,
         metode: "Transfer",
         keterangan: "DP"
     }
