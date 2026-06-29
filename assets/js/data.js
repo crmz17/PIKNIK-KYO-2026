@@ -73,6 +73,15 @@ keterangan:"Cash"
 },
 
 {
+nama:"Dicky",
+jumlah:1,
+tagihan:150000,
+bayar:0,
+metode:"-",
+keterangan:""
+},
+    
+{
 nama:"Dimas",
 jumlah:1,
 tagihan:150000,
@@ -243,6 +252,15 @@ keterangan:""
 },
 
 {
+nama:"Samadi",
+jumlah:1,
+tagihan:150000,
+bayar:0,
+metode:"-",
+keterangan:""
+},
+    
+{
 nama:"Suryanto",
 jumlah:1,
 tagihan:150000,
@@ -280,15 +298,6 @@ keterangan:""
 
 {
 nama:"Wawan",
-jumlah:3,
-tagihan:450000,
-bayar:0,
-metode:"-",
-keterangan:""
-},
-
-{
-nama:"Yuda",
 jumlah:3,
 tagihan:450000,
 bayar:0,
