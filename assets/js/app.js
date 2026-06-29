@@ -76,14 +76,19 @@ document.getElementById("statistik").innerHTML = `
 document.getElementById("progressBar").style.width = progress + "%";
 
 document.getElementById("progressText").innerHTML =
-document.getElementById("targetDana").innerHTML = rupiah(totalTagihan);
-
-document.getElementById("danaMasuk").innerHTML = rupiah(totalBayar);
-
-document.getElementById("sisaDana").innerHTML = rupiah(totalKurang);
-
-document.getElementById("persentaseDana").innerHTML = progress + "%";
 `${progress}% (${rupiah(totalBayar)} / ${rupiah(totalTagihan)})`;
+
+document.getElementById("targetDana").innerHTML =
+rupiah(totalTagihan);
+
+document.getElementById("danaMasuk").innerHTML =
+rupiah(totalBayar);
+
+document.getElementById("sisaDana").innerHTML =
+rupiah(totalKurang);
+
+document.getElementById("persentaseDana").innerHTML =
+progress + "%";
 
 // ===============================
 // TABEL
@@ -226,7 +231,8 @@ btnDark.onclick = () => {
 // =====================
 // DETAIL
 // =====================
-
+const modal = document.getElementById("modal");
+const closeModal = document.getElementById("closeModal");
 function detail(nama){
 
     const p = peserta.find(x=>x.nama===nama);
@@ -264,7 +270,8 @@ closeModal.onclick=()=>{
 // =====================
 // PRINT
 // =====================
-
+const btnPrint = document.getElementById("btnPrint");
+const btnTop = document.getElementById("btnTop");
 btnPrint.onclick=()=>{
 
     window.print();
@@ -290,73 +297,10 @@ document.getElementById("lastUpdate").innerHTML =
 new Date().toLocaleDateString("id-ID",{
     dateStyle:"full"
 });
+
 // ===============================
 // LOG UANG MASUK
 // ===============================
-
-function renderLogMasuk() {
-
-    const tbody = document.getElementById("logMasukTable");
-
-    tbody.innerHTML = "";
-
-    logMasuk.forEach(item => {
-
-        tbody.innerHTML += `
-            <tr class="border-b hover:bg-slate-50">
-
-                <td class="p-3">${item.tanggal}</td>
-
-                <td>${item.nama}</td>
-
-                <td>${rupiah(item.jumlah)}</td>
-
-                <td>
-                    <span class="px-2 py-1 rounded-lg text-white ${
-                        item.metode === "Transfer"
-                        ? "bg-blue-600"
-                        : "bg-green-600"
-                    }">
-                        ${item.metode}
-                    </span>
-                </td>
-
-                <td>${item.keterangan}</td>
-
-            </tr>
-        `;
-
-    });
-
-}
-
-// ===============================
-// LOG UANG KELUAR
-// ===============================
-
-function renderLogKeluar() {
-
-    const tbody = document.getElementById("logKeluarTable");
-
-    tbody.innerHTML = "";
-
-    logKeluar.forEach(item => {
-
-        tbody.innerHTML += `
-            <tr class="border-b hover:bg-slate-50">
-
-                <td class="p-3">${item.tanggal}</td>
-
-                <td>${rupiah(item.jumlah)}</td>
-
-                <td>${item.keperluan}</td>
-
-            </tr>
-        `;
-
-    });
-
-}
 
 function renderLogMasuk() {
 
@@ -393,6 +337,9 @@ function renderLogMasuk() {
 
 }
 
+// ===============================
+// LOG UANG KELUAR
+// ===============================
 function renderLogKeluar() {
 
     const tbody = document.getElementById("logKeluarTable");
@@ -418,3 +365,11 @@ function renderLogKeluar() {
     });
 
 }
+renderLogMasuk();
+renderLogKeluar();
+
+document.getElementById("jumlahLogMasuk").textContent =
+`${logMasuk.length} Transaksi`;
+
+document.getElementById("jumlahLogKeluar").textContent =
+`${logKeluar.length} Transaksi`;
