@@ -336,21 +336,21 @@ keterangan:""
 
 const logMasuk = [
     {
-        tanggal: "2026-06-05",
+        tanggal: "27-06-2026",
         nama: "Agung",
         jumlah: 150000,
         metode: "Transfer",
         keterangan: "Lunas"
     },
     {
-        tanggal: "2026-06-06",
+        tanggal: "27-06-2026",
         nama: "Angga",
         jumlah: 50000,
         metode: "Cash",
         keterangan: "DP"
     },
     {
-        tanggal: "2026-06-07",
+        tanggal: "27-06-2026",
         nama: "Malik",
         jumlah: 450000,
         metode: "Transfer",
@@ -360,19 +360,19 @@ const logMasuk = [
 
 const logKeluar = [
     {
-        tanggal: "2026-06-10",
-        jumlah: 250000,
-        keperluan: "Booking Bus"
+        tanggal: "",
+        jumlah: ,
+        keperluan: ""
     },
     {
-        tanggal: "2026-06-12",
-        jumlah: 175000,
-        keperluan: "Konsumsi"
+        tanggal: "",
+        jumlah: ,
+        keperluan: ""
     },
     {
-        tanggal: "2026-06-15",
-        jumlah: 80000,
-        keperluan: "Tol"
+        tanggal: "",
+        jumlah: ,
+        keperluan: ""
     }
 ];
 renderLogMasuk();
