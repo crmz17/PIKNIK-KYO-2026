@@ -361,7 +361,7 @@ const logMasuk = [
         nama: "Bowo",
         jumlah: 230000,
         metode: "Cash",
-        keterangan: "Cash + Tabungan"
+        keterangan: "DP"
     },
     {
         tanggal: "2026-06-27",
