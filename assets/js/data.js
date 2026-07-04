@@ -255,9 +255,9 @@ keterangan:""
 nama:"Suryanto",
 jumlah:1,
 tagihan:150000,
-bayar:100000,
-metode:"Tabungan",
-keterangan:"Ambil Tabungan 100.000"
+bayar:150000,
+metode:"Cash",
+keterangan:"Cash+Tabungan 100.000"
 },
 
 {
@@ -384,13 +384,6 @@ const logMasuk = [
     },
     {
         tanggal: "2026-06-27",
-        nama: "Suryanto",
-        jumlah: 100000,
-        metode: "Cash",
-        keterangan: "DP"
-    },
-    {
-        tanggal: "2026-06-27",
         nama: "Tesa",
         jumlah: 300000,
         metode: "Cash",
@@ -451,6 +444,13 @@ const logMasuk = [
         jumlah:150000,
         metode:"Cash",
         keterangan:"Lunas"
+    },
+    {
+        tanggal: "2026-07-04",
+        nama: "Suryanto",
+        jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
     }
 ];
 const logKeluar = [
