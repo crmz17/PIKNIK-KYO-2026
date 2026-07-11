@@ -219,7 +219,7 @@ keterangan:"TF"
 nama:"Okta",
 jumlah:4,
 tagihan:600000,
-bayar:450000,
+bayar:600000,
 metode:"Cash",
 keterangan:"Cash"
 },
@@ -360,13 +360,6 @@ const logMasuk = [
         jumlah: 150000,
         metode: "Cash",
         keterangan: "Lunas"
-    },
-    {
-        tanggal: "2026-06-27",
-        nama: "Okta",
-        jumlah: 450000,
-        metode: "Cash",
-        keterangan: "DP"
     },
     {
         tanggal: "2026-06-27",
@@ -526,6 +519,13 @@ const logMasuk = [
         tanggal: "2026-07-11",
         nama: "Khansa",
         jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-06-27",
+        nama: "Okta",
+        jumlah: 600000,
         metode: "Cash",
         keterangan: "Lunas"
     },
