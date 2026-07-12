@@ -246,9 +246,9 @@ keterangan:"Transfer"
 nama:"Rizky",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:50000,
+metode:"Transfer",
+keterangan:"Transfer"
 },
     
 {
