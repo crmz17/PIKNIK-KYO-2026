@@ -22,9 +22,9 @@ keterangan:"Transfer"
 nama:"Angga",
 jumlah:1,
 tagihan:150000,
-bayar:50000,
+bayar:150000,
 metode:"Cash",
-keterangan:"Cash"
+keterangan:"Cash 60.000 + Transfer 90.000"
 },
 
 {
@@ -228,9 +228,9 @@ keterangan:"Cash"
 nama:"Sigit",
 jumlah:2,
 tagihan:300000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:300000,
+metode:"Cash",
+keterangan:"Cash"
 },
 
 {
@@ -323,13 +323,6 @@ const logMasuk = [
         jumlah: 150000,
         metode: "Transfer",
         keterangan: "Lunas"
-    },
-    {
-        tanggal: "2026-06-27",
-        nama: "Angga",
-        jumlah: 50000,
-        metode: "Cash",
-        keterangan: "DP"
     },
     {
         tanggal: "2026-06-27",
@@ -552,6 +545,20 @@ const logMasuk = [
         tanggal: "2026-07-12",
         nama: "Cahyo",
         jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-13",
+        nama: "Angga",
+        jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-13",
+        nama: "Sigit",
+        jumlah: 300000,
         metode: "Cash",
         keterangan: "Lunas"
     }
