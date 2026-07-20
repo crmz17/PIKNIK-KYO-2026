@@ -56,9 +56,9 @@ keterangan:"Cash 110.000 + Ambil Tabungan 40.000"
 
 {
 nama:"Dani",
-jumlah:1,
-tagihan:150000,
-bayar:150000,
+jumlah:2,
+tagihan:300000,
+bayar:300000,
 metode:"Cash",
 keterangan:"Cash"
 },
@@ -271,9 +271,9 @@ keterangan:"Cash 200.000 + Ambil Tabungan 100.000"
     
 {
 nama:"Wawan",
-jumlah:3,
-tagihan:450000,
-bayar:450000,
+jumlah:4,
+tagihan:600000,
+bayar:600000,
 metode:"Cash",
 keterangan:"Cash"
 },
@@ -481,7 +481,7 @@ const logMasuk = [
     {
         tanggal: "2026-07-11",
         nama: "Dani",
-        jumlah: 150000,
+        jumlah: 300000,
         metode: "Cash",
         keterangan: "Lunas"
     },
@@ -573,6 +573,41 @@ const logKeluar = [
         tanggal: "2026-07-12",
         jumlah: 1250000,
         keperluan: "Pembayaran Konsumsi Peserta"
+    },
+    {
+        tanggal: "2026-07-12",
+        jumlah: 80000,
+        keperluan: "Beli K3 & Obat-Obatan"
+    },
+    {
+        tanggal: "2026-07-18",
+        jumlah: 62000,
+        keperluan: "Beli Air Mineral 3 Box + Print Seat Map"
+    },
+    {
+        tanggal: "2026-07-19",
+        jumlah: 1500000,
+        keperluan: "Sewa 4 Shuttle"
+    },
+    {
+        tanggal: "2026-07-19",
+        jumlah: 720000,
+        keperluan: "Tiket Masuk Wisata 48 Orang"
+    },
+    {
+        tanggal: "2026-07-19",
+        jumlah: 80000,
+        keperluan: "Parkir 4 Shuttle"
+    },
+    {
+        tanggal: "2026-07-19",
+        jumlah: 250000,
+        keperluan: "Bayar Supir + Kenek Bus"
+    },
+    {
+        tanggal: "2026-07-19",
+        jumlah: 20000,
+        keperluan: "Parkir Bus"
     }
 ];
 renderLogMasuk();
